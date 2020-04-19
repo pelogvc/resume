@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/pelogvc/resume/issues"
   },
-  "homepage": "https://github.com/pelogvc/resume#readme"
+  "homepage": "https://github.com/pelogvc/resume#readme",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
 }
