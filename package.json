@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/pelogvc/resume#readme",
   "devDependencies": {
-    "sass": "^1.26.3"
+    "sass": "^1.26.8"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-modules": "^2.0.0"
   }
 }
