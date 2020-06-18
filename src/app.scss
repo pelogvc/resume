@@ -150,7 +150,7 @@ header#header-box {
   .profile-content {
     position: relative;
     padding-top: 70px;
-    padding-left: 35px;
+    /*padding-left: 35px;*/
 
     .profile-name {
       color: #222;
@@ -175,6 +175,28 @@ section#continer {
   padding-top: 81px;
 
   .row-content {
+    // border-bottom: 1px solid #ddd;
+    // margin-bottom: 30px;
+
+    h1 {
+      font-family: 'Archive' !important;
+      font-size: 35px;
+      font-weight: normal;
+      background-color: yellow;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+      padding-top: 30px;
+    }
+  }
+
+  .block {
+    clear:both;
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
 
@@ -188,22 +210,29 @@ section#continer {
 
   .row-aside {
     width: 300px;
+
+    a {
+      line-height: 1.6em;
+      color: #8196ff;
+      font-size: 13px;
+      display: block;
+      letter-spacing: 1px;
+    }
   }
 
   .content {
     width: 600px;
     margin-left: 20px;
-    padding-top: 78px;
 
     .item {
-      padding: 20px 0;
+      padding: 10px 0;
       display: block;
 
       li {
         display: block;
-        padding-bottom: 6px;
         position: relative;
         padding-left: 14px;
+        padding-bottom: 0px;
 
         &:last-child {
           padding-bottom: 0;
@@ -221,18 +250,10 @@ section#continer {
     }
   }
 
-  .row-aside h1 {
-    font-family: 'Archive' !important;
-    font-size: 35px;
-    font-weight: normal;
-    background-color: yellow;
-    display: inline;
-  }
-
   h2 {
     font-size: 25px;
     font-weight: bold;
-    padding-top: 35px;
+    padding: 0;
   }
 
   .text {
