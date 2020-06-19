@@ -273,7 +273,7 @@ section#continer .row-aside {
 @media (min-width: 319px) and (max-width: 539px) {
   section#continer .row-aside {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 section#continer .row-aside h2 {
@@ -333,7 +333,7 @@ section#continer h2 {
 }
 @media (min-width: 319px) and (max-width: 539px) {
   section#continer h2 {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 section#continer .text {
