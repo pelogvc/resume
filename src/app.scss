@@ -1,8 +1,35 @@
 @charset "utf-8";
+// Breakpoints
+$breakpoint-mobile: 319px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+$width: 920px;
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
 html {
   overflow-y: scroll;
+}
+
+* {
+  box-sizing:border-box;
 }
 
 body {
@@ -126,14 +153,26 @@ em {
 
 header#header-box {
   background-color: #ffffff;
-  min-width: 920px;
+  width: 100%;
   border-bottom: 1px solid #f1f1f1;
 
   .header-inner {
-    width: 920px;
+    width: $width;
     height: 213px;
     margin: 0 auto;
     position: relative;
+    
+    @include mobile {
+      width:100%;
+      height:auto;
+      padding-bottom:40px;
+
+      &:after {
+        clear:both;
+        content: '';
+        display:block;
+      }
+    }
   }
 
   .profile-image-box {
@@ -153,6 +192,10 @@ header#header-box {
     padding-top: 70px;
     /*padding-left: 35px;*/
 
+    @include mobile {
+      padding-top:40px;
+    }
+
     .profile-name {
       color: #222;
       font-weight: bold;
@@ -165,41 +208,75 @@ header#header-box {
       line-height: 2em;
       font-size: 14px;
       color: #1f1f1f;
+
+      @include mobile {
+        line-height:1.5em;
+      }
+    }
+  }
+  @include mobile {
+    min-width:100%;
+    width:100%;
+    padding:0 2rem;
+
+    .float-left {
+
     }
   }
 }
 
 section#continer {
-  width: 920px;
+  width: $width;
   margin: 0 auto;
   position: relative;
   padding-top: 81px;
+
+  @include mobile {
+    min-width:100%;
+    width:100%;
+    padding:30px 2rem 0 2rem;
+
+    .float-left,
+    .float-right {
+      float:none;
+    }
+  }
 
   .row-content {
     // border-bottom: 1px solid #ddd;
     // margin-bottom: 30px;
 
-    li {
-      margin-bottom:15px;
+    &>li {
+      margin-bottom:25px;
+
+      @include mobile {
+        border-bottom:1px solid #f7f7f7;
+        padding-bottom:25px;
+
+        &:first-child {
+          border-bottom:none;
+        }
+      }
 
       &:after {
         content: '';
         clear: both;
         display: block;
       }
-    }
 
-    li.block {
-      clear:both;
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 30px;
-  
-      &:after {
-        content: '';
-        clear: both;
-        display: block;
-        padding-top: 30px;
+      &:last-child {
+        clear:both;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+    
+        &:after {
+          content: '';
+          clear: both;
+          display: block;
+          padding-top: 30px;
+        }
       }
+
     }
 
     &:after {
@@ -207,6 +284,16 @@ section#continer {
       clear: both;
       display: block;
       padding-top: 30px;
+
+      @include mobile {
+        display:none;
+      }
+    }
+
+    &:last-child {
+      &>li {
+        border-bottom: none;
+      }
     }
   }
 
@@ -217,10 +304,25 @@ section#continer {
     background-color: yellow;
     display: inline-block;
     margin-bottom: 25px;
+
+    @include mobile {
+      margin-bottom:10px;
+      font-size:30px;
+      display: inline;
+    }
   }
 
   .row-aside {
     width: 300px;
+
+    @include mobile {
+      width:100%;
+      margin-bottom:10px;
+    }
+
+    h2 {
+      font-size:24px;
+    }
 
     a {
       line-height: 1.6em;
@@ -235,9 +337,22 @@ section#continer {
     width: 600px;
     margin-left: 20px;
 
+    @include mobile {
+      width:100%;
+      margin-left:0;
+
+      h2 {
+        color:#000;
+      }
+    }
+
     .item {
       padding: 10px 0;
       display: block;
+
+      @include mobile {
+        padding: 5px 0;
+      }
 
       li {
         display: block;
@@ -266,12 +381,21 @@ section#continer {
     font-size: 25px;
     font-weight: bold;
     padding: 0;
+
+    @include mobile {
+      font-size:18px;
+    }
   }
 
   .text {
     line-height: 1.9em;
     color: #7b7b7b;
     font-size: 15px;
+
+    @include mobile {
+      line-height: 1.5em;
+      font-size:14px;
+    }
 
 
     a {
