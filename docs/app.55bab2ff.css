@@ -135,7 +135,7 @@ header#header-box .header-inner {
   margin: 0 auto;
   position: relative;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   header#header-box .header-inner {
     width: 100%;
     height: auto;
@@ -162,7 +162,7 @@ header#header-box .profile-content {
   padding-top: 70px;
   /*padding-left: 35px;*/
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   header#header-box .profile-content {
     padding-top: 40px;
   }
@@ -179,12 +179,12 @@ header#header-box .profile-content p {
   font-size: 14px;
   color: #1f1f1f;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   header#header-box .profile-content p {
     line-height: 1.5em;
   }
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   header#header-box {
     min-width: 100%;
     width: 100%;
@@ -198,7 +198,7 @@ section#continer {
   position: relative;
   padding-top: 81px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer {
     min-width: 100%;
     width: 100%;
@@ -212,7 +212,7 @@ section#continer .float-right {
 section#continer .row-content > li {
   margin-bottom: 25px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer .row-content > li {
     border-bottom: 1px solid #f7f7f7;
     padding-bottom: 25px;
@@ -243,7 +243,7 @@ section#continer .row-content:after {
   display: block;
   padding-top: 30px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer .row-content:after {
     display: none;
   }
@@ -260,7 +260,7 @@ section#continer h1 {
   display: inline-block;
   margin-bottom: 25px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer h1 {
     margin-bottom: 10px;
     font-size: 30px;
@@ -270,7 +270,7 @@ section#continer h1 {
 section#continer .row-aside {
   width: 300px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer .row-aside {
     width: 100%;
     margin-bottom: 10px;
@@ -290,7 +290,7 @@ section#continer .content {
   width: 600px;
   margin-left: 20px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer .content {
     width: 100%;
     margin-left: 0;
@@ -303,7 +303,7 @@ section#continer .content .item {
   padding: 10px 0;
   display: block;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer .content .item {
     padding: 5px 0;
   }
@@ -331,7 +331,7 @@ section#continer h2 {
   font-weight: bold;
   padding: 0;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer h2 {
     font-size: 18px;
   }
@@ -341,7 +341,7 @@ section#continer .text {
   color: #7b7b7b;
   font-size: 15px;
 }
-@media (min-width: 319px) and (max-width: 757px) {
+@media (min-width: 319px) and (max-width: 539px) {
   section#continer .text {
     line-height: 1.5em;
     font-size: 14px;
