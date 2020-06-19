@@ -301,7 +301,8 @@ section#continer {
     font-family: 'Archive' !important;
     font-size: 35px;
     font-weight: normal;
-    background-color: yellow;
+    background-color: yellow !important;
+    -webkit-print-color-adjust: exact; 
     display: inline-block;
     margin-bottom: 25px;
 
