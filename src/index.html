@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="./app.Scss">
+<link rel="stylesheet" href="./app.scss">
 <title>이력서 - 안현수</title> 
 </head>
 <body>
@@ -27,9 +27,11 @@
     </div>
 </header>
 <section id="continer">
-    <div class="row-content">
-        <h1>PROJECTS</h1>
-        <div class="block">
+    <ul class="row-content">
+        <li>
+            <h1>PROJECTS</h1>
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>삼화 S&D</h2>
@@ -60,12 +62,12 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Php, Jquery, Ajax, Css</p>
+                        <p class="text">php, jQuery, ajax, css</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block">
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>SKBMALL(KOOKIS)</h2>
@@ -83,7 +85,7 @@
                     <div class="item">
                         <p class="text">
                             영카트(PHP)를 기반으로 기존 쇼핑몰에 있던 관리자 기능들을 개발하였습니다.<br/>
-                            Sass를 이용해 퍼블리싱하였습니다.
+                            sass를 이용해 퍼블리싱하였습니다.
                         </p>
                     </div>
                     <h2>What did I do</h2>
@@ -99,12 +101,12 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Php, Scss(Sass), Jquery, Ajax</p>
+                        <p class="text">php, scss(sass), jQuery, ajax</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block">
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>Watcha rating for Netflix</h2>
@@ -126,12 +128,12 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Typescript, Sass(Scss), Web Storage</p>
+                        <p class="text">Typescript, sass(scss), Web Storage</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block">
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>삼화쇼핑몰</h2>
@@ -148,7 +150,7 @@
                     <h2>Description</h2>
                     <div class="item">
                         <p class="text">
-                            운영중인 Php CodeIgniter Framework로 제작된 쇼핑몰(퍼스트몰)을 유지보수 하였습니다.
+                            운영중인 php CodeIgniter Framework로 제작된 쇼핑몰(퍼스트몰)을 유지보수 하였습니다.
                         </p>
                     </div>
                     <h2>What did I do</h2>
@@ -164,12 +166,12 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Php, CI Framework, Jquery, Css</p>
+                        <p class="text">php, CI Framework, jQuery, css</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block">
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>현대미가</h2>
@@ -202,12 +204,12 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Php, Jquery, Css</p>
+                        <p class="text">php, jQuery, css</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block">
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>중국어 사전</h2>
@@ -240,12 +242,12 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Typescript, React, Redux, Redux-saga, Sass(Scss), Web Storage</p>
+                        <p class="text">Typescript, React, Redux, Redux-saga, sass(scss), Web Storage</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block">
+        </li>
+        <li class="block">
             <div class="float-left">
                 <div class="row-aside">
                     <h2>As-is, FLOWJEANS</h2>
@@ -270,7 +272,7 @@
                     <div class="item">
                         <ul>
                             <li>
-                                <p class="text">이미지 및 파일 Aws S3 연동</p>
+                                <p class="text">이미지 및 파일 AWS S3 연동</p>
                             </li>
                             <li>
                                 <p class="text">인스타그램 API연동</p>
@@ -285,12 +287,49 @@
                     </div>
                     <h2>Tech Stack</h2>
                     <div class="item">
-                        <p class="text">Php, Aws S3, Jquery, Css</p>
+                        <p class="text">php, aws S3, jQuery, css</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
+    <ul class="row-content">
+        <li>
+            <h1>EDUCATION & CERTIFICATE</h1>
+        </li>
+        <li>
+            <div>
+                <h2 class="float-left">대진대학교 졸업</h2>
+                <p class="text float-right">
+                    컴퓨터공학과 2014.02 - 2019.02
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h2 class="float-left">苏州大学 毕业</h2>
+                <p class="text float-right">
+                    汉语言文学 2014.09 - 2019.06
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h2 class="float-left">정보처리기사</h2>
+                <p class="text float-right">
+                    합격
+                </p>
+            </div>
+        </li>
+        <li class="block">
+            <div>
+                <h2 class="float-left">HSK</h2>
+                <p class="text float-right">
+                    5级
+                </p>
+            </div>
+        </li>
+    </ul>
 </section>
 </body>
 </html>
