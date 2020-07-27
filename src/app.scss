@@ -158,8 +158,7 @@ header#header-box {
 
   .header-inner {
     width: $width;
-    height: 213px;
-    margin: 0 auto;
+    margin: 40px auto;
     position: relative;
     
     @include mobile {
@@ -189,7 +188,6 @@ header#header-box {
 
   .profile-content {
     position: relative;
-    padding-top: 70px;
     /*padding-left: 35px;*/
 
     @include mobile {

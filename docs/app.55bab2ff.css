@@ -131,8 +131,7 @@ header#header-box {
 }
 header#header-box .header-inner {
   width: 920px;
-  height: 213px;
-  margin: 0 auto;
+  margin: 40px auto;
   position: relative;
 }
 @media (min-width: 319px) and (max-width: 539px) {
@@ -159,7 +158,6 @@ header#header-box .profile-image-item {
 }
 header#header-box .profile-content {
   position: relative;
-  padding-top: 70px;
   /*padding-left: 35px;*/
 }
 @media (min-width: 319px) and (max-width: 539px) {
