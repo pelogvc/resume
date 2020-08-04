@@ -22,6 +22,14 @@ $width: 920px;
   }
 }
 
+@font-face { 
+  font-family: 'yg-jalnan'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
 html {
@@ -237,6 +245,29 @@ section#continer {
     .float-left,
     .float-right {
       float:none;
+    }
+  }
+
+  .qa-content {
+    padding-bottom:50px;
+    margin-bottom:30px;
+    border-bottom:1px solid #f1f1f1;
+
+    &>li {
+      margin-bottom:30px;
+      p {
+        line-height: 2em;
+        font-size: 15px;
+        color: #1f1f1f;
+      }
+
+      h1 {
+        font-family: 'yg-jalnan' !important;
+        font-size: 29px;
+        line-height: 34px;
+        margin-bottom: 0;
+
+      }
     }
   }
 
